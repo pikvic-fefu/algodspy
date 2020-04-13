@@ -14,6 +14,12 @@ class TestList(unittest.TestCase):
         lst = List(data)
         self.assertEqual(lst.get_item(1), data[1])
 
+    def test_list_repr(self):
+        data = [1, 2, 3]
+        lst = List(data)
+        self.assertEqual(list.__repr__, data.__repr__)
+        
+
 
 if __name__ == '__main__':
     unittest.main()
