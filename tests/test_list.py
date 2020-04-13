@@ -9,5 +9,11 @@ class TestList(unittest.TestCase):
         lst = List(data)
         self.assertEqual(lst.data, data)
 
+    def test_list_get_item(self):
+        data = [1, 2, 3]
+        lst = List(data)
+        self.assertEqual(lst.get_item(1), data[1])
+
+
 if __name__ == '__main__':
     unittest.main()
