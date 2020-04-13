@@ -17,7 +17,7 @@ class TestList(unittest.TestCase):
     def test_list_repr(self):
         data = [1, 2, 3]
         lst = List(data)
-        self.assertEqual(list.__repr__, data.__repr__)
+        self.assertEqual(list.__repr__(), data.__repr__())
         
 
 
